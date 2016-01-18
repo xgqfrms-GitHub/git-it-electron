@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../assets/imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/octicons.css">
+
   </head>
   <body>
     <header id="challenge-header" class="site-header">
@@ -160,14 +162,20 @@
 
 <p>Now with what you just learned above, commit this latest change.</p>
 
-<div class="verify">
-  <button class="white" id='verify-challenge'>VERIFY</button>
-  <button class="white" id='select-directory'>SELECT DIRECTORY</button>
-  <span id='path-required-warning'>Please select your repository directory.</span>
-  <span id='directory-path'></span>
-  <ul id="verify-list">
-  </ul>
-  <button class="white full-width" id="clear-completed-challenge">Clear completed status</button>
+<div class="verify-container">
+  <div class="verify">
+    <button class="btn-primary btn-small" id='select-directory'>Select Directory</button>
+    <button class="btn-primary btn-small" id='verify-challenge'>Verify</button>
+    <span id='path-required-warning'>Please select your repository directory.</span>
+    <span id='directory-path'></span>
+  </div>
+  <div class="verify-results">
+    <ul id="verify-list">
+    </ul>
+    <button class="white full-width" id="clear-completed-challenge">
+      Challenge completed!<span class="octicon octicon-trashcan"></span>
+    </button>
+  </div>
 </div>
 
 <div id="git-tips">

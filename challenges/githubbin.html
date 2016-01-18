@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../assets/imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/octicons.css">
+
   </head>
   <body>
     <header id="challenge-header" class="site-header">
@@ -148,11 +150,17 @@ which will be needed in order to verify the upcoming challenges. Save it exactly
 <code class="shell">git config --global user.username &#60;USerNamE&#62;</code>
 <br><br>
 
-<div class="verify">
-  <button class="white" id='verify-challenge'>VERIFY</button>
-  <ul id="verify-list">
-  </ul>
-  <button class="white full-width" id="clear-completed-challenge">Clear completed status</button>
+<div class="verify-container">
+  <div class="verify">
+    <button class="btn-primary btn-small" id='verify-challenge'>Verify</button>
+  </div>
+  <div class="verify-results">
+    <ul id="verify-list">
+    </ul>
+    <button class="white full-width" id="clear-completed-challenge">
+      Challenge completed!<span class="octicon octicon-trashcan"></span>
+    </button>
+  </div>
 </div>
 
 <div class="didnt-pass">

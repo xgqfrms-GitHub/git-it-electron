@@ -1,9 +1,15 @@
-<div class="verify">
-  <button class="white" id='verify-challenge'>VERIFY</button>
-  <button class="white" id='select-directory'>SELECT DIRECTORY</button>
-  <span id='path-required-warning'>Please select your repository directory.</span>
-  <span id='directory-path'></span>
-  <ul id="verify-list">
-  </ul>
-  <button class="white full-width" id="clear-completed-challenge">Clear completed status</button>
+<div class="verify-container">
+  <div class="verify">
+    <button class="btn-primary btn-small" id='select-directory'>Select Directory</button>
+    <button class="btn-primary btn-small" id='verify-challenge'>Verify</button>
+    <span id='path-required-warning'>Please select your repository directory.</span>
+    <span id='directory-path'></span>
+  </div>
+  <div class="verify-results">
+    <ul id="verify-list">
+    </ul>
+    <button class="white full-width" id="clear-completed-challenge">
+      Challenge completed!<span class="octicon octicon-trashcan"></span>
+    </button>
+  </div>
 </div>
